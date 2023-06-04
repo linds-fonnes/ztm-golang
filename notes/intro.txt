@@ -1,0 +1,54 @@
+Why Go?
+-Familiar C-style syntax
+-Bult in dependency management
+-Perfect for backend programming because of first-class concurrency primitives
+-type safety enforced by compiler
+-Memory safe; no use-after-free bugs
+-Garbage collected; no need to manage memory
+-Compiles to machine code for very fast speeds
+
+About Packages
+-Packages are Go's way of organizing code
+-Programs are written as one or more packages, can  be imported from the Go package registry
+-Packages should be focused and perform a single thing
+
+Using Packages
+-Can import everything using a dot (.) - no need to reference package name in code 
+-Imports can be renamed
+
+Modules
+-Modules are a collection of packages
+-Created by having a go.mod file in the root directory of your project, can be managed by the Go CLI 
+-Contains information about your project -- dependencies, Go version, package information
+-All Go projevt have a go.mod file
+
+
+Data Types
+-Go is a statically typed language, data types must be provided by the programmer
+-Go uses type inference to determine what type of data it is working with -- data types only need to be provided in specific circumstances, can always specify the type if desired
+-Compiler error if wrong type is used
+
+Type Aliases
+-Possible to create type Aliases
+-Same in every way to another type, just a different name
+-Useful for providing indication of what kind of data is being utilized
+
+Type Conversions
+-Converting between types can be done with parentheses
+
+Strings & Runes
+-Textual data in Go uses UTF-8 Encoding
+-Text is represented using the 'rune' type- similar to 'char' in many other programming languages
+-Rune is an alias for int32
+-A rune can represent any symbol
+-A string is the data type for storing multiple runes
+
+Go CLI Tool
+-build : builds the project & emits an executable binary
+- build -race : checks for concurrency problems
+- run: runs the projects directly; no output exeputable
+- mod: manages modules & dependencies
+- mod tidy: updates dependencies
+- test : runs the projects test suite
+- fmt: formats all source files (usually automated w/ IDE)
+
